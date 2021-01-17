@@ -1,1 +1,1 @@
-worker: python celebrationbot.py
+worker: python celebrationbot
