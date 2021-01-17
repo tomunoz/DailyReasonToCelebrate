@@ -20,10 +20,13 @@ api = tp.API(auth, wait_on_rate_limit=True)
 
 #print("This is a Twitter bot named 'DailyReasonToCelebrate'")
 
-Holidays = {"2021-01-16":"Teachers Day : Thailand"}
+Holidays = {"2021-01-16":"Jan 16 : Teachers Day : Thailand",
+            "2021-01-17":"Jan 17 : National Hot Buttered Rum Day : Unknown Location",
+            "2021-01-18":"Jan 18 : Winnie The Pooh Day : Where Winnie The Pooh Is Loved"}
+
 Date_Today = date.today()
-#print("Today's date is ", Date_Today)
 
-#print(Holidays["2021-01-16"])
-
-api.update_status(Holidays["2021-01-16"])
+try:
+    api.update_status(Holidays[Date_Today])
+except:
+    pass
