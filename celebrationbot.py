@@ -27,6 +27,6 @@ Holidays = {"2021-01-16":"Jan 16 : Teachers Day : Thailand",
 Date_Today = date.today()
 
 try:
-    api.update_status(Holidays[Date_Today])
+    api.update_status(Holidays[str(Date_Today)])
 except:
     pass
