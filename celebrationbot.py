@@ -31,4 +31,5 @@ while True:
         api.update_status(Holidays[str(Date_Today)])
     except:
         pass
+    print("Starting new hour.")
     time.sleep(3600)
