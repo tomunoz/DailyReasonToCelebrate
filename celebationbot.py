@@ -6,15 +6,16 @@ import time
 import os
 from os import environ
 
+print("This is a Twitter bot named 'DailyReasonToCelebrate' 1")
 # credentials to login to twitter api
-api_key = environ['api_key']
-api_secret_key = environ['api_secret_key']
+CONSUMER_KEY = environ['CONSUMER_KEY']
+CONSUMER_SECRET = environ['CONSUMER_SECRET']
 
-access_token = environ['access_token']
-access_token_secret = environ['access_token_secret']
+ACCESS_KEY = environ['ACCESS_KEY']
+ACCESS_SECRET = environ['ACCESS_SECRET']
 
-auth = tp.OAuthHandler(api_key, api_secret_key)
-auth.set_access_token(access_token, access_token_secret)
+auth = tp.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tp.API(auth, wait_on_rate_limit=True)
 
 print("This is a Twitter bot named 'DailyReasonToCelebrate'")
