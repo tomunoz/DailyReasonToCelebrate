@@ -1,7 +1,7 @@
 # Twitter Bot = DailyReasonToCelebrate
 
 import tweepy as tp
-import DateTime
+from datetime import date
 import time
 import os
 from os import environ
