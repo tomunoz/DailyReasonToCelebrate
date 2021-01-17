@@ -1,9 +1,9 @@
 # Twitter Bot = DailyReasonToCelebrate
 
 import tweepy as tp
+import DateTime
 import time
 import os
-import Datetime
 from os import environ
 
 # credentials to login to twitter api
