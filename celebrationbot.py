@@ -26,7 +26,7 @@ Date_Today = date.today()
 Holidays_df = pd.read_csv("DailyHolidays.csv")
 today_holidays_df = Holidays_df.loc[Holidays_df["Date"] == str(Date_Today)]
 today_holidays_days = today_holidays_df["Holiday"]
-
+media = api.media_upload("CelebrationIMG.png")
 Holidays = ""
 i = 1
 for item in today_holidays_days:
@@ -35,7 +35,7 @@ for item in today_holidays_days:
 
 while True:
     try:
-        api.update_status("Today's opportunities to celebrate include: " + Holidays)
+        api.update_status(status="Today's opportunities to celebrate include: " + Holidays, media_ids=[media.media_id])
         print("Successful Twitter status update")
     except:
         pass
