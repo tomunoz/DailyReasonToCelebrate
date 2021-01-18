@@ -6,6 +6,7 @@ import time
 import os
 from os import environ
 import pandas as pd
+import xlrd
 
 #print("This is a Twitter bot named 'DailyReasonToCelebrate' 1")
 # credentials to login to twitter api
