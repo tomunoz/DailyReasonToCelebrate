@@ -1,6 +1,7 @@
 # Twitter Bot = DailyReasonToCelebrate
 
 import tweepy as tp
+import datetime
 from datetime import date
 import time
 import os
@@ -40,4 +41,5 @@ while True:
     except:
         pass
     print("Starting new hour")
-    time.sleep(3600)
+    time.sleep(86400)
+
