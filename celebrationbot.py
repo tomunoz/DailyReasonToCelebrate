@@ -23,7 +23,7 @@ api = tp.API(auth, wait_on_rate_limit=True)
 #print("This is a Twitter bot named 'DailyReasonToCelebrate'")
 Date_Today = date.today()
 
-Holidays_df = pd.read_excel("DailyHolidays.xlsx")
+Holidays_df = pd.read_csv("DailyHolidays.csv")
 today_holidays_df = Holidays_df.loc[Holidays_df["Date"] == str(Date_Today)]
 today_holidays_days = today_holidays_df["Holiday"]
 
