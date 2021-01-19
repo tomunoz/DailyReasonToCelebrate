@@ -51,9 +51,9 @@ img = Image.open(image_in_file)
 draw = ImageDraw.Draw(img)
 #font = ImageFont.truetype('Pillow/Tests/fonts/FreeMono.ttf', size=10)
 #this_font = "arial.ttf"
-font = ImageFont.truetype(".fonts/arial.ttf", 60)
+font = ImageFont.truetype(".fonts/arial.ttf", 75)
 draw.text((20, 20), text, (0, 0, 0), font=font)
-draw.text((20, 1150), str(Date_Today), (0, 0, 0), font=font)
+draw.text((20, 1150), str(date_reformat), (0, 0, 0), font=font)
 img.save(image_out_file)
 
 # create the image file with text that will be posted to twitter
