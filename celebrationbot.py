@@ -2,7 +2,7 @@
 
 import tweepy as tp
 import datetime
-from datetime import date
+from datetime import date, datetime
 import time
 import os
 from os import environ
@@ -31,6 +31,7 @@ image_out_file = "CelebrationIMGOriginalOutput.png"
 
 # today's date
 Date_Today = date.today()
+date_reformat = datetime.today().strftime('%Y-%b-%d')
 
 # read the csv file with the holidays (Date, Holiday, Location)
 Holidays_df = pd.read_csv("DailyHolidays.csv")
@@ -50,9 +51,9 @@ img = Image.open(image_in_file)
 draw = ImageDraw.Draw(img)
 #font = ImageFont.truetype('Pillow/Tests/fonts/FreeMono.ttf', size=10)
 #this_font = "arial.ttf"
-font = ImageFont.truetype(".fonts/arial.ttf", 25)
-draw.text((10, 10), text, (0, 51, 204), font=font)
-draw.text((10, 420), str(Date_Today), (0, 51, 204), font=font)
+font = ImageFont.truetype(".fonts/arial.ttf", 60)
+draw.text((20, 20), text, (0, 0, 0), font=font)
+draw.text((20, 1150), str(Date_Today), (0, 0, 0), font=font)
 img.save(image_out_file)
 
 # create the image file with text that will be posted to twitter
@@ -61,7 +62,7 @@ media = api.media_upload(image_out_file)
 # post the image to twitter
 while True:
     try:
-        api.update_status(status="Today's holidays " + "(" + str(Date_Today) + ") " + "to celebrate and commemorate include: ", media_ids=[media.media_id])
+        api.update_status(status="Today's holidays " + "(" + str(date_reformat) + ") " + "to celebrate and commemorate include: ", media_ids=[media.media_id])
         print("Successful Twitter status update")
     except:
         pass
