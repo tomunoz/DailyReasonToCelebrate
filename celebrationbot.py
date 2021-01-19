@@ -50,7 +50,7 @@ img = Image.open(image_in_file)
 draw = ImageDraw.Draw(img)
 #font = ImageFont.truetype('Pillow/Tests/fonts/FreeMono.ttf', size=10)
 #this_font = "arial.ttf"
-font = ImageFont.truetype("arial.ttf", 25)
+font = ImageFont.truetype(".fonts/arial.ttf", 25)
 draw.text((10, 10), text, (0, 51, 204), font=font)
 draw.text((10, 420), str(Date_Today), (0, 51, 204), font=font)
 img.save(image_out_file)
