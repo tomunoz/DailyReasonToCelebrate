@@ -49,9 +49,10 @@ for index, row in today_holidays_df.iterrows():
 img = Image.open(image_in_file)
 draw = ImageDraw.Draw(img)
 #font = ImageFont.truetype('Pillow/Tests/fonts/FreeMono.ttf', size=10)
-font = ImageFont.truetype(font="Arial", size=25)
+this_font = "arial.ttf"
+font = ImageFont.truetype(font=this_font, size=25)
 draw.text((10, 10), text, (0, 51, 204), font=font)
-draw.text((10, 420), str(Date_Today), (0, 51, 204), font=font)
+draw.text((10, 420), str(Date_Today), (0, 51, 204), font=this_font)
 img.save(image_out_file)
 
 # create the image file with text that will be posted to twitter
