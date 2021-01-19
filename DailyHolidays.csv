@@ -1,52 +1,86 @@
-﻿Date,Holiday
-2021-01-16,Signing of the Peace Accords
-2021-01-16,Teachers' Day
-2021-01-16,Anniversary of President Laurent Kabila’s Assassination
-2021-01-16,Nothing Day
-2021-01-16,National Without a Scalpel Day
-2021-01-16,National Religious Freedom Day
-2021-01-16,National Fig Newton Day
-2021-01-17,Anniversary of Prime Minister Patrice Emery Lumumba’s Assassination
-2021-01-17,National Hot Buttered Rum Day
-2021-01-17,National Bootlegger’s Day
-2021-01-17,Martyrdom of Fatima
-2021-01-18,Winnie The Pooh Day
-2021-01-18,National Peking Duck Day
-2021-01-18,National Thesaurus Day
-2021-01-18,National Michigan Day
-2021-01-18,Blue Monday
-2021-01-18,Martin Luther King Jr Day
-2021-01-18,Idaho Human Rights Day
-2021-01-18,Civil Rights Day
-2021-01-19,Orthodox Epiphany
-2021-01-19,World Quark Day
-2021-01-19,National Popcorn Day
-2021-01-19,Timket
-2021-01-19,Epiphany / Timkat
-2021-01-20,Martyrs’ Day
-2021-01-20,Heroes Day
-2021-01-20,Penguin Awareness Day
-2021-01-20,National Buttercrunch Day
-2021-01-20,National Disc Jockey Day
-2021-01-20,National Cheese Lover’s Day
-2021-01-20,Guru Govind Singh Jayanti
-2021-01-20,Army Day
-2021-01-20,Inauguration Day
-2021-01-21,Errol Barrow Day
-2021-01-21,Our Lady of Altagracia
-2021-01-21,Princess Ingrid Alexandra's day
-2021-01-21,National Hugging Day
-2021-01-21,National Granola Bar Day
-2021-01-21,Squirrel Appreciation Day
-2021-01-21,Get to Know Your Customers Day
-2021-01-22,Plurinational State Foundation Day
-2021-01-22,Franco-German Day
-2021-01-22,Ukrainian Unity Day
-2021-01-22,National Blonde Brownie Day
-2021-01-23,Handwriting Day
-2021-01-23,National Pie Day
-2021-01-23,Day of Saint Ildefonso
-2021-01-24,Compliment Day
-2021-01-24,Unification Day
-2021-01-24,National Peanut Butter Day
-2021-01-24,Beer Can Appreciation Day
+﻿Date,Holiday,Location
+2021-01-16,Anniversary of President Laurent Kabila’s Assassination,Congo democratic republic
+2021-01-16,National Fig Newton Day,??
+2021-01-16,National Religious Freedom Day,??
+2021-01-16,National Without a Scalpel Day,??
+2021-01-16,Nothing Day,??
+2021-01-16,Signing of the Peace Accords,El salvador
+2021-01-16,Teachers' Day,Thailand
+2021-01-17,Anniversary of Prime Minister Patrice Emery Lumumba’s Assassination,Congo democratic republic/Iran
+2021-01-17,Martyrdom of Fatima,Congo Democratic Republic
+2021-01-17,National Bootlegger’s Day,??
+2021-01-17,National Hot Buttered Rum Day,??
+2021-01-18,Blue Monday,??
+2021-01-18,Civil Rights Day,United States
+2021-01-18,Idaho Human Rights Day,United States
+2021-01-18,Martin Luther King Jr Day,United States
+2021-01-18,National Michigan Day,??
+2021-01-18,National Peking Duck Day,??
+2021-01-18,National Thesaurus Day,??
+2021-01-18,Winnie The Pooh Day,??
+2021-01-19,Epiphany /Timkat,Ethiopia
+2021-01-19,National Popcorn Day,??
+2021-01-19,National Tin Can Day,??
+2021-01-19,Orthodox Epiphany,Georgia
+2021-01-19,Timket,Eritrea
+2021-01-19,World Quark Day,??
+2021-01-20,Army Day,Mali
+2021-01-20,Guru Govind Singh Jayanti,India
+2021-01-20,Heroes Day,Guinea??bissau/Cabo Verde
+2021-01-20,Inauguration Day,United States
+2021-01-20,Martyrs’ Day,Azerbaijan
+2021-01-20,National Buttercrunch Day,??
+2021-01-20,National Cheese Lover’s Day,??
+2021-01-20,National Disc Jockey Day,??
+2021-01-20,Penguin Awareness Day,??
+2021-01-21,Errol Barrow Day,Barbados
+2021-01-21,Get to Know Your Customers Day,??
+2021-01-21,National Granola Bar Day,??
+2021-01-21,National Hugging Day,??
+2021-01-21,Our Lady of Altagracia,Dominican republic
+2021-01-21,Princess Ingrid Alexandra's day,Norway
+2021-01-21,Squirrel Appreciation Day,??
+2021-01-22,Franco-German Day,Germany
+2021-01-22,National Blonde Brownie Day,??
+2021-01-22,Plurinational State Foundation Day,Bolivia
+2021-01-22,Ukrainian Unity Day,Ukraine
+2021-01-23,Day of Saint Ildefonso,Spain
+2021-01-23,Handwriting Day,??
+2021-01-23,Measure Your Feet Day,??
+2021-01-23,National Pie Day,??
+2021-01-24,Beer Can Appreciation Day,??
+2021-01-24,Compliment Day,??
+2021-01-24,Global Belly Laugh Day,??
+2021-01-24,National Peanut Butter Day,??
+2021-01-24,Unification Day,Romania
+2021-01-25,Betico Croes' Birthday,Aruba
+2021-01-25,Bubble Wrap Appreciation Day (Last Monday of Month),??
+2021-01-25,Burns Night,United kingdom (Scotland)
+2021-01-25,Duarte's Day,Dominican Republic
+2021-01-25,National Bubble Wrap Appreciation Day,??
+2021-01-25,National Florida Day,??
+2021-01-25,National Heroes Day,Cayman Islands
+2021-01-25,National Irish Coffee Day,??
+2021-01-25,Opposite Day,??
+2021-01-25,Revolution Day January 25,Egypt
+2021-01-25,Tatiana Day,Ukraine
+2021-01-25,Wellington Anniversary Day,New Zealand
+2021-01-26,Australia Day,Australia
+2021-01-26,International Customs Day,??
+2021-01-26,Liberation Day,Uganda
+2021-01-26,National Green Juice Day,??
+2021-01-26,National Peanut Brittle Day,??
+2021-01-26,National Spouses Day,??
+2021-01-26,Plan for Vacation Day,??
+2021-01-26,Republic Day,India
+2021-01-27,Chocolate Cake Day,??
+2021-01-27,Punch The Clock Day,??
+2021-01-28,Data Privacy Day,??
+2021-01-28,Fun at Work Day,??
+2021-01-28,National Kazoo Day,??
+2021-01-29,National Cornchip Day,??
+2021-01-29,National Puzzle Day,??
+2021-01-30,National Inane Answering Message Day,??
+2021-01-30,National See Swap Day (Last Day In January),??
+2021-01-31,Backward Day,??
+2021-01-31,Inspire Your Heart with Art Day,??
