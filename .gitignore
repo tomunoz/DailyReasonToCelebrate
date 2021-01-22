@@ -1,0 +1,8 @@
+.DS_Store
+*.orig
+/build
+.idea
+
+credentials.json
+localdev-config.json
+server/localdev-config.json
