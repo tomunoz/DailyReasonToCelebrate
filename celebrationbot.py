@@ -12,6 +12,8 @@ from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 import sys
+import sqlite3
+from contextlib import closing
 
 #print("This is a Twitter bot named 'DailyReasonToCelebrate' 1")
 
@@ -19,7 +21,6 @@ def create_api():
     # credentials to login to twitter api
     CONSUMER_KEY = environ['CONSUMER_KEY']
     CONSUMER_SECRET = environ['CONSUMER_SECRET']
-
     ACCESS_KEY = environ['ACCESS_KEY']
     ACCESS_SECRET = environ['ACCESS_SECRET']
     
@@ -29,7 +30,7 @@ def create_api():
     api = tp.API(auth, wait_on_rate_limit=True)
     return api
 
-
+'''
 def get_text():
     # read the csv file with the holidays (Date, Holiday, Location)
     Holidays_df = pd.read_csv("DailyHolidays.csv")
@@ -42,6 +43,28 @@ def get_text():
     for index, row in today_holidays_df.iterrows(): 
         text = text + str(i) + "]" + row["Holiday"] + " (" + row["Location"] + ")\n"
         i += 1
+    return text
+'''
+'''
+'''
+
+
+def get_text():
+    # connect to the db or create and connect to the db if it does not exist
+    connection = sqlite3.connect("holidays.db")
+    # create the db table for holidays
+    cursor = connection.cursor()
+    Date_Today = date.today()
+    rows = cursor.execute("SELECT * FROM holidays WHERE date = ?", (Date_Today,)).fetchall()
+    text = ""
+    i = 1
+    for item in rows:
+        text = text + str(i) + "] " + item[1] + " (" + item[2] + ")\n"
+        i += 1
+    # close the db connections
+    with closing(sqlite3.connect("holidays.db")) as connection:
+        with closing(connection.cursor()) as cursor:
+            rows = cursor.execute("SELECT 1").fetchall()
     return text
 
 
