@@ -82,6 +82,7 @@ def main():
         # wait a day
         #time.sleep(86400)
         exit()
+    exit()
 
 
 if __name__ == '__main__':
