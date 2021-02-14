@@ -15,7 +15,6 @@ import sys
 import sqlite3
 from contextlib import closing
 
-#print("This is a Twitter bot named 'DailyReasonToCelebrate' 1")
 
 def create_api():
     # credentials to login to twitter api
@@ -29,24 +28,6 @@ def create_api():
     auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
     api = tp.API(auth, wait_on_rate_limit=True)
     return api
-
-'''
-def get_text():
-    # read the csv file with the holidays (Date, Holiday, Location)
-    Holidays_df = pd.read_csv("DailyHolidays.csv")
-    # retrieve only today's holidays
-    Date_Today = date.today()
-    today_holidays_df = Holidays_df.loc[Holidays_df["Date"] == str(Date_Today)]
-    # iterate through today's holidays and create text string to add to image
-    text = ""
-    i = 1
-    for index, row in today_holidays_df.iterrows(): 
-        text = text + str(i) + "]" + row["Holiday"] + " (" + row["Location"] + ")\n"
-        i += 1
-    return text
-'''
-'''
-'''
 
 
 def get_text():
@@ -99,7 +80,8 @@ def main():
             pass
         print("Waiting for next day")
         # wait a day
-        time.sleep(86400)
+        #time.sleep(86400)
+        exit()
 
 
 if __name__ == '__main__':
