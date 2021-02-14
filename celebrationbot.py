@@ -81,7 +81,7 @@ def main():
         print("Waiting for next day")
         # wait a day
         #time.sleep(86400)
-        exit()
+        break
     exit()
 
 
