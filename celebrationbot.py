@@ -80,9 +80,8 @@ def main():
             pass
         print("Waiting for next day")
         # wait a day
-        #time.sleep(86400)
-        break
-    exit()
+        time.sleep(31536000)
+
 
 
 if __name__ == '__main__':
