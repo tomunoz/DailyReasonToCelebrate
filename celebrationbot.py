@@ -40,7 +40,7 @@ def get_text():
     text = ""
     i = 1
     for item in rows:
-        text = text + str(i) + "] " + item[1] + " (" + item[2] + ")\n"
+        text = text + str(i) + "] " + item[1] + "\n"
         i += 1
     # close the db connections
     with closing(sqlite3.connect("holidays.db")) as connection:
