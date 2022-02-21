@@ -15,7 +15,7 @@ import sys
 import sqlite3
 from contextlib import closing
 
-
+""""
 def create_api():
     # credentials to login to twitter api
     CONSUMER_KEY = environ['CONSUMER_KEY']
@@ -28,7 +28,7 @@ def create_api():
     auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
     api = tp.API(auth, wait_on_rate_limit=True)
     return api
-
+"""
 
 def get_text():
     # connect to the db or create and connect to the db if it does not exist
@@ -36,8 +36,11 @@ def get_text():
     # create the db table for holidays
     cursor = connection.cursor()
     Date_Today = date.today().strftime('%-m/%-d/%-y')
-    """ Date_Today = date.today() """
+    """ date_reformat = datetime.today().strftime('%m/%-d/%-y') """
+    print("Date Today = " + str(Date_Today))
+    """ rows = cursor.execute("SELECT * FROM holidays").fetchall() """
     rows = cursor.execute("SELECT * FROM holidays WHERE date = ?", (Date_Today,)).fetchall()
+    print(rows)
     text = ""
     i = 1
     for item in rows:
@@ -49,7 +52,7 @@ def get_text():
             rows = cursor.execute("SELECT 1").fetchall()
     return text
 
-
+""""
 def get_media(text, api):
     # define image to be used and image output files
     image_in_file = "CelebrationIMGOriginal.png"
@@ -65,20 +68,22 @@ def get_media(text, api):
     # create the image file with text that will be posted to twitter
     media = api.media_upload(image_out_file)
     return media
-
+"""
 
 def main():
     while True:
-        api = create_api()
+        #api = create_api()
         text = get_text()
-        media = get_media(text, api)
+        print(text)
+        #media = get_media(text, api)
         date_reformat = datetime.today().strftime('%Y-%b-%d')
-        try:
+        print("Date Reformat = " + str(date_reformat))
+        #try:
             # post the image to twitter
-            api.update_status(status="Today's holidays " + "(" + str(date_reformat) + ") " + "to celebrate and commemorate include: ", media_ids=[media.media_id])
-            print("Successful Twitter status update")
-        except:
-            pass
+            #api.update_status(status="Today's holidays " + "(" + str(date_reformat) + ") " + "to celebrate and commemorate include: ", media_ids=[media.media_id])
+            #print("Successful Twitter status update")
+        #except:
+            #pass
         print("Waiting for next day")
         # wait a day
         #time.sleep(31536000)
