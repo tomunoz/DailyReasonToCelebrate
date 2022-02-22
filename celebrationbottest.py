@@ -35,7 +35,8 @@ def get_text():
     connection = sqlite3.connect("holidays.db")
     # create the db table for holidays
     cursor = connection.cursor()
-    Date_Today = date.today().strftime('%-m/%-d/%-y')
+    Date_Today = date.today().strftime('%Y-%m-%d')
+    """ date_reformat = datetime.today().strftime('%Y-%b-%d') """
     """ date_reformat = datetime.today().strftime('%m/%-d/%-y') """
     print("Date Today = " + str(Date_Today))
     """ rows = cursor.execute("SELECT * FROM holidays").fetchall() """
