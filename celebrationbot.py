@@ -35,7 +35,8 @@ def get_text():
     connection = sqlite3.connect("holidays.db")
     # create the db table for holidays
     cursor = connection.cursor()
-    Date_Today = date.today().strftime('%-m/%-d/%-y')
+    Date_Today = date.today().strftime('%Y-%m-%d')
+    """ Date_Today = date.today().strftime('%-m/%-d/%-y') """
     """ Date_Today = date.today() """
     rows = cursor.execute("SELECT * FROM holidays WHERE date = ?", (Date_Today,)).fetchall()
     text = ""
